@@ -16,29 +16,40 @@
         <div class="lead">Deposit and withdraw your fake money.</div>
       </div>
       <form>
+
         <div class="row">
-          <div class="col-8">
-            <div class="card">
+          <!-- column 1 -->
+          <div class="col-7">
+            <div id="create-card" class="card">
               <div class="card-body">
-                <input id="first-name-input" type="text" class="form-control" placeholder="First Name">
-                <input id="last-name-input" type="text" class="form-control" placeholder="Last Name">
-                <input id="street-address-input" type="text" class="form-control" placeholder="Street">
-                <input id="apartment-number-input" type="text" class="form-control" placeholder="Apt">
-                <input id="city-input" type="text" class="form-control" placeholder="City">
-                <input id="state-input" type="text" class="form-control" placeholder="State">
-                <input id="zip-code-input" type="text" class="form-control" placeholder="Zip Code">
-                <input id="phone-number-input" type="text" class="form-control" placeholder="Phone Number">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">$</span>
+                <div id="creation-fields">
+                  <input id="first-name-input" type="text" class="form-control" placeholder="First Name">
+                  <input id="last-name-input" type="text" class="form-control" placeholder="Last Name">
+                  <input id="street-address-input" type="text" class="form-control" placeholder="Street">
+                  <input id="apartment-number-input" type="text" class="form-control" placeholder="Apt">
+                  <input id="city-input" type="text" class="form-control" placeholder="City">
+                  <input id="state-input" type="text" class="form-control" placeholder="State">
+                  <input id="zip-code-input" type="text" class="form-control" placeholder="Zip Code">
+                  <input id="phone-number-input" type="text" class="form-control" placeholder="Phone Number">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">$</span>
+                    </div>
+                    <input id="initial-input" type="number" class="form-control" placeholder="Initial Deposit">
                   </div>
-                  <input id="initial-input" type="number" class="form-control" placeholder="Initial Deposit">
                 </div>
                 <button id="create-button" type="submit" class="btn btn-info">Create Account</button>
+                <button id="sign-in-button" type="submit" class="btn btn-primary">Sign In</button>
+              </div>
+            </div>
+            <div id="info-card" class="card hidden">
+              <div class="card-header" id="customer-info-header"></div>
+              <div class="card-body" id="customer-info-display">
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <!-- column 2 -->
+          <div class="col-5">
             <div id="transfer-card" class="card hidden">
               <div class="card-body">
                 <div class="input-group">
@@ -51,22 +62,48 @@
                 <button id="withdraw-button" class="btn btn-danger">Withdraw</button>
               </div>
             </div>
+            <div id="transaction-header" class="card-header hidden">
+              <div class="row">
+                <div class="col">
+                Transactions
+                </div>
+                <div class="col">
+                  <button id="transaction-button" class="btn btn-warning float-right">Show</button>
+                </div>
+              </div>
+            </div>
+            <div id="transaction-card" class="card hidden">
+              <div class="card-body">
+                <div class="row">
+                  <div id="transaction-type" class="col-4"></div>
+                  <div class="divider"></div>
+                  <div id="transaction-amount" style="text-align:right" class="col-3"></div>
+                  <div class="divider"></div>
+                  <div id="transaction-new-balance" style="text-align:right" class="col-3"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </form>
-      <div class="row">
-        <div class="col-8">
-          <div id="info-card" class="card hidden">
-            <div class="card-header" id="customer-info-header"></div>
-            <div class="card-body" id="customer-info-display">
-
-              <!-- <span id="balance">$4.34</span> -->
+        <div id="login-screen" class="card">
+          <div class="card-body">
+            <h3>Log In</h3>
+            <div class="input-group">
+              <div class="row">
+                <div class="col">
+                  <input id="username-input" type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="col">
+                  <input id="password-input" type="text" class="form-control" placeholder="Password">
+                </div>
+              </div>
+            <div class="row">
+              <button style="width:200px" id="submit-button" type="submit" class="btn btn-success">Submit</button>
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
   </body>
 </html>

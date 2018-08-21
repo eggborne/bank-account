@@ -7,13 +7,32 @@ button {
 .hidden {
   display: none;
 }
-
 .card {
   margin-bottom: 20px;
 }
 .float-right {
   float: right;
 }
-#transfer-card, #balance-card {
-
+.divider {
+  background-color: lightgray;
+  width:1px;
+}
+.collapsed {
+  height: 0px;
+  transform-origin:top;
+  opacity: 0;
+  pointer-events:none;
+}
+#transaction-card > .card-body {
+}
+#transaction-button {
+  margin-top:0;
+  width:140px;
+}
+#creation-fields {
+  transition: all 100ms linear
+}
+#login-screen {
+  height: 80vh;
+  /* position:fixed; */
 }
