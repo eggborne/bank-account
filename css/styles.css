@@ -1,0 +1,19 @@
+input {
+  margin-bottom: 10px
+}
+button {
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+.float-right {
+  float: right;
+}
+#transfer-card, #balance-card {
+
+}
