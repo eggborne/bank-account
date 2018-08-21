@@ -33,6 +33,13 @@ button {
   transition: all 100ms linear
 }
 #login-screen {
-  height: 80vh;
+  display:none;
+  /* height: 80vh; */
   /* position:fixed; */
+}
+
+#submit-button {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

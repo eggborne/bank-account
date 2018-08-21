@@ -30,6 +30,10 @@ $(function(){
       event.preventDefault();
     });
 
+    $('#submit-button').click(function(event) {
+      event.preventDefault();
+    });
+
     $('#deposit-button').click(function(event){
     event.preventDefault();
     var userMoney = parseFloat($('#money-input').val())
